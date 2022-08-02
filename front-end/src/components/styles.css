@@ -1,0 +1,183 @@
+*
+{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  /* font-size: 13px; */
+}
+
+:root{
+  --blue-1: rgb(16, 63, 151);
+  --blue-2: rgb(79, 129, 221);
+  --blue-3: rgb(16, 10, 130);
+  --white-1: beige;
+  --white-blue:rgb(226, 221, 255);
+}
+
+.NavBar
+{
+  height: 55px;
+  /* background-color: var(--blue-3); */
+  display: flex;
+  flex-direction: row;
+  background-image: linear-gradient(to right, var(--blue-3), var(--blue-2));
+}
+
+.NavLinkContainer
+{
+  padding-top: 20px;
+}
+
+.NavLink
+{
+  text-decoration: none;
+  color: var(--white-1);
+  padding: 10px 10px 10px 10px;
+  font-size: 15px;
+  border-radius: 7px;
+  font-weight:600;
+  transition: background-color 500ms, color 500ms;
+}
+
+.NavLink:hover
+{
+  background-color: var(--blue-2);
+  /* background-image: radial-gradient(circle, rgb(16, 10, 130), rgb(79, 129, 221)); */
+  color: var(--blue-3);
+}
+
+body{
+  background-color: var(--white-blue);
+}
+
+.NavIcon 
+{
+  /* box-shadow: 2px 2px 3px black; */
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.CusTable
+{
+  border:1px solid black;
+  font-size: 13px;
+  border-collapse: collapse;
+}
+
+.CusTable th
+{
+  border:1px solid black;
+  background-color: grey;
+  padding: 5px 10px 5px 10px;
+}
+
+.CusTable td
+{
+  border:1px solid black;
+  padding: 5px 10px 5px 10px;
+}
+
+/* ---------------------------------------SIDEBAR START-------------------------------  */
+/* #sideMenu
+{
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#btn 
+{
+  position: fixed;
+  z-index: 5px;
+  top: 70px;
+  left: 15px;
+  cursor: pointer;
+  transition: left 500ms;
+}
+
+#btn div
+{
+  width: 25px;
+  height: 2px;
+  margin-bottom: 8px;
+  background-color: blue;
+  transition: transform 500ms green, opacity 500ms, background-color 250ms;
+}
+
+#btn.active{
+  left: 230px;
+}
+
+#btn.active #top
+{
+  background-color: black;
+}
+
+#btn.active #top
+{
+  transform: translateY(10px) rotate(-135deg);
+}
+
+#btn.active #middle
+{
+  opacity: 0;
+	transform: rotate(135deg);
+}
+
+#btn.active #bottom
+{
+  opacity: 0;
+	transform: rotate(135deg);
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+#Menu {
+	position: fixed;
+	z-index: 4;
+	overflow: auto;
+	top: 0px;
+	left: -275px;
+	width: 275px;
+	opacity: 0;
+	padding: 20px 0px;
+	height: 100%;
+	background-color: #f6f6f6;
+	color: #343838;
+	transition: all 350ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
+}
+
+#Menu.active {
+	left: 0px;
+	opacity: 1;
+}
+
+#OptionsList
+{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#OptionsList .Option
+{
+  position: relative;
+  cursor: pointer;
+  font-size: 2em;
+  padding: 15px 30px;
+  transition: all 250ms;
+}
+
+#OptionsList .Option:hover
+{
+  padding: 15px 45px;
+  background-color: transparentize(#343838);
+}
+
+#btn, #btn * {
+	will-change: transform;
+}
+
+#Menu {
+	will-change: transform, opacity;
+}  */
+/* ---------------------------------------SIDEBAR END------------------------------- */

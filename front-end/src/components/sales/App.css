@@ -1,0 +1,438 @@
+.Sales *
+{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  /* font-size: 13px; */
+}
+
+:root{
+  --blue-1: rgb(16, 63, 151);
+  --blue-2: rgb(79, 129, 221);
+  --blue-3: rgb(16, 10, 130);
+  --cyan-1: rgb(227, 255, 255);
+  --white-1: beige;
+  --white-blue:rgb(226, 221, 255);
+}
+
+.NavBar
+{
+  height: 55px;
+  /* background-color: var(--blue-3); */
+  display: flex;
+  flex-direction: row;
+  background-image: linear-gradient(to right, var(--blue-3), var(--blue-2));
+  position: sticky;
+  top: 0px;
+  /* border-width: 1px; */
+  border-bottom: 2px solid var(--blue-3);
+}
+
+.NavLinkContainer
+{
+  padding-top: 20px;
+}
+
+.NavLink
+{
+  text-decoration: none;
+  color: var(--white-1);
+  padding: 10px 10px 10px 10px;
+  font-size: 15px;
+  border-radius: 7px;
+  font-weight:600;
+  transition: background-color 500ms, color 500ms;
+}
+
+.NavLink:hover
+{
+  background-color: var(--blue-2);
+  /* background-image: radial-gradient(circle, rgb(16, 10, 130), rgb(79, 129, 221)); */
+  color: var(--blue-3);
+}
+
+/* .Sales body{
+  background-color: var(--white-blue);
+} */
+
+.NavIcon 
+{
+  /* box-shadow: 2px 2px 3px black; */
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+#SubMenu
+{
+  height: 50px;
+  background-color: var(--blue-2);
+  display: flex;
+  flex-direction: row;
+}
+
+#SubMenu #Heading
+{
+  font-size: 18px;
+  margin: 10px 15px;
+  font-weight: bold;
+  color: var(--blue-3);
+}
+
+.SubLinkContainer
+{
+  padding-top: 20px;
+}
+
+.SubLink
+{
+  text-decoration: none;
+  color: var(--blue-3);
+  padding: 10px 10px 10px 10px;
+  font-size: 15px;
+  border-radius: 7px;
+  font-weight:600;
+  transition: background-color 500ms, color 500ms;
+}
+
+.SubLink:hover
+{
+  background-color: rgb(20, 23, 128);
+  color: var(--white-blue);
+}
+
+.Form
+{
+  display: flex;
+  flex-direction: column;
+  width: 620px;
+  /* border: 1px solid black; */
+  margin: 0px auto;
+}
+
+.Form label
+{
+  width: 140px;
+  display: inline-block;
+  text-align: right;
+  padding: 10px 10px 5px 0px;
+}
+
+.Form input[type="text"],.Form input[type="password"]
+{
+  padding: 5px 5px 5px 10px;
+  margin: 5px auto;
+  border-radius: 10px;
+  border-width: 3px;
+  border-style: inset;
+  border-color: var(--blue-2);
+  background-color: aliceblue;
+  width: 200px;
+  transition: background-color 500ms;
+}
+
+.Form input[type="text"]:hover
+{
+  background-color: var(--white-1);
+}
+
+.searchBar
+{
+  margin: 8px 5px 8px 15px;
+}
+
+.searchBar .searchBarInput
+{
+  width: 150px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
+  background-color: rgb(198, 198, 213);
+  border: none;
+  transition: width 500ms;
+}
+
+.searchBar .searchBarInput:hover
+{
+  width: 300px;
+  background-color: var(--white-1);
+  outline: none;
+}
+
+.searchBar .searchBarInput:focus
+{
+  width: 300px;
+  background-color: var(--white-1);
+  outline: none;
+}
+
+.searchBar .searchBtn
+{
+  background-color: var(--blue-2);
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
+  width: 20px;
+  height: 25px;
+  background-image: url("./images/search.png");
+  background-size: cover;
+  transition: background-color 500ms;
+}
+
+.searchBar .searchBtn:hover
+{
+  background-color: var(--white-1);
+  cursor:pointer;
+}
+
+.Footer
+{
+  position: fixed;
+  left: 0;
+  bottom: 1px;
+  width: 100%;
+  /* background-color: var(--blue-2); */
+  color: var(--blue-3);
+  text-align: right;
+  padding: 0px 0px 2px 0px;
+  font-size: 12px;
+}
+
+.Footer img
+{
+  height: 15px;
+}
+
+.Form-Button
+{
+  margin: 0px 50px 0px 150px;
+}
+
+.FormBtn
+{
+  background-color: var(--blue-2);
+  padding: 5px 10px 5px 10px;
+  margin: 5px 10px 5px 10px;
+  color: var(--white-1);
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: 14px;
+  transition: background-color 500ms, color 500ms;
+}
+
+.FormBtn:hover 
+{
+  background-color: var(--cyan-1);
+  color: var(--blue-3);
+  cursor: pointer;
+}
+
+.LinkBtn
+{
+  background-color: var(--blue-2);
+  padding: 5px 10px 5px 10px;
+  margin: 5px 10px 5px 10px;
+  color: var(--white-1);
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 14px;
+  border: 2px solid black;
+  transition: background-color 500ms, color 500ms;
+}
+
+.LinkBtn:hover
+{
+  background-color: var(--cyan-1);
+  color: var(--blue-3);
+  cursor: pointer;
+}
+
+.Form .errMsg
+{
+  color: red;
+  display: inline-block;
+  /* margin-left:0px; */
+  padding: 2px 5px 2px 5px;
+  width: 220px;
+  /* background-color: aqua; */
+  font-size: 13px;
+}
+
+.Form .postMsg
+{
+  /* background-color: aqua; */
+  width: 300px;
+}
+
+.CusTable
+{
+  border:1px solid black;
+  font-size: 13px;
+  border-collapse: collapse;
+}
+
+.CusTable th
+{
+  border:1px solid var(--blue-2);
+  background-color: var(--blue-3);
+  padding: 5px 10px 5px 10px;
+  color: var(--white-1);
+  max-width: 100px;
+  /* width: 100px; */
+}
+
+.CusTable td
+{
+  border:1px solid black;
+  padding: 5px 10px 5px 10px;
+  background-color: var(--cyan-1);
+  max-width: 250px;
+
+}
+
+.CusTable .btnCell
+{
+  background-color: transparent;
+}
+
+.UpdateBtn
+{
+  background-color: var(--blue-2);
+  color: blanchedalmond;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 7px 10px 7px 10px;
+  transition: background-color 500ms, color 500ms;
+}
+
+.UpdateBtn:hover
+{
+  background-color: var(--cyan-1);
+  color: var(--blue-2);
+}
+
+.DeleteBtn
+{
+  background-color: rgb(184, 50, 1);
+  color: antiquewhite;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 7px 10px 7px 10px;
+  transition: background-color 500ms, color 500ms;
+}
+
+.DeleteBtn:hover
+{
+  background-color: var(--cyan-1);
+  color: rgb(184, 50, 1);
+  cursor: pointer;
+}
+
+.profile
+{
+  display: flex;
+  flex-direction: column;
+  margin: 40px auto 20px 200px;
+}
+
+.profilePic
+{
+  border: 1px solid black;
+  width: 430px;
+}
+
+.profilePic img
+{
+  margin: 0 auto;
+  /* background-color: yellowgreen; */
+}
+
+.mainProfileContainer
+{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+
+.mainProfileLabels
+{
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.mainProfileLabels label, .mainProfileData label
+{
+  border: 1px solid black;
+}
+
+.mainProfileLabels label
+{
+  background-color: var(--blue-3);
+  color: var(--white-1);
+  padding-left: 10px;
+  padding: 5px 10px 5px 20px;
+  max-width: 120px;
+  width: 120px;
+}
+
+.mainProfileData label
+{
+  background-color: var(--cyan-1);
+  padding: 5px 20px 5px 10px;
+  max-width: 250px;
+  width: 250px;
+}
+
+.mainProfileData
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.PromptContainer
+{
+  display: flex;
+  flex-direction: column;
+  margin:auto;
+  width: 50%;
+  /* background-color: yellow; */
+}
+
+.PromptText
+{
+  font-size: 20px;
+  text-align: center;
+  padding: 20px 10px 20px 10px;
+  font-weight: bold;
+}
+
+.PromptSubContainer
+{
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.YesNo
+{
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px 10px;
+}
+
+.PromptRight
+{
+  /* background-color: yellowgreen; */
+  padding: 0px 100px;
+}
+
+.PromptLeft
+{
+  /* background-color: violet; */
+  display: flex;
+  flex-direction: column;
+}
